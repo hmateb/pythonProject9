@@ -1,0 +1,5 @@
+print("a.","feladat:")
+print(20*"-")
+a=int(input(2.7/50)*60,"perc","településen belüli")
+b=int(input(7.9/90)*60,"perc","településen kivüli")
+c=int(input(29.7/130)*60,"perc","autópályán")
