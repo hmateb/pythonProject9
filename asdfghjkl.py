@@ -1,0 +1,5 @@
+a=input("kérem adja meg a vezetéknevet:")
+b=input("kérem adja meg a keresztnevét:")
+c=int(input("szül év"))
+print("Az ön teljes neve",a,b)
+print("Az ön életkora",2021-c)
