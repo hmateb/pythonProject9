@@ -80,4 +80,3 @@ a = []
 for elem in lista1:
     if elem%5==0:
         a.append(elem)
-print(a)
