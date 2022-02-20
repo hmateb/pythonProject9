@@ -1,44 +1,18 @@
-lista = []
-def paros_e():
-    null = False
-    while not null:
-       a = int(input("Adjon meg egy számot: "))
-       if a == 0:
-            null = True
-       else:
-            lista.append(a)
-            if a % 2 == 0:
-                print("Ez a szám páros!")
-            else:
-                print("Ez egy páratlan szám!")
-    print(lista)
+#afeladat:
+d = input("Adj meg egy szót: ")
+b = []
+for i in range(len(d)):
+    b.append(ord(d[i])-32)
 
-def osszeg_fg():
-    b = 0
-    for i in lista:
-        b += i
-    print("A számok összege: ", b)
-def atlag():
-    b=0
-    for i in lista:
-        b += i
-    print("A számok átlaga:",b/len(lista))
+for i in b:
+    print(chr(i), end=" ")
+print(" ")
+#bfeladat
+a = input("Adj meg egy szót: ")
+d = []
+for i in range(len(a)):
+    d.append(ord(a[i])-32)
 
-
-def harommal_oszthatok():
-    c = 0
-    for i in range(len(lista)):
-        if lista[i]%3==0:
-            c += 1
-    print("3-al osztható számok:",c)
-def kisebb():
-    min=0
-    for i in lista:
-        if lista[i]<lista[0]:
-            min = lista[i]
-    print("legkisebb szám:",min)
-
-paros_e()
-osszegfg()
-atlag()
-harommal
+for i in range(len(d), 0, -1):
+    print(chr(d[i-1]), end=" ")
+print(" ")
