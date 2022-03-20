@@ -1,9 +1,15 @@
-a=int(input("Kerem adja meg a szuletesi evet:"))
-b=int(input("Kerem adja meg a szuletesi honapjat"))
-c=int(input("Kerem adja meg a születesi napját"))
+def sorozat(szoveg):
+    num=0
+    for szam in szoveg:
+        if szam !=".":
+            num+= int(szam)
+        return str(num)
+def honap(szoveg):
+    honapok=["január","február","március","április","május","június","július","augusztus","szeptember","október","november","december"]
 
 
-
-x=a+b+c
-x=
-print(x)
+digitoflife=input("Add meg születési dátumod!")
+while len(digitoflife)!=1:
+    digitoflife=sorozat(digitoflife)
+if honap in digitoflife:
+    print("Az élet számod:",digitoflife)
