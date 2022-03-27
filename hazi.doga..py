@@ -1,15 +1,38 @@
-def sorozat(szoveg):
-    num=0
-    for szam in szoveg:
-        if szam !=".":
-            num+= int(szam)
-        return str(num)
-def honap(szoveg):
-    honapok=["január","február","március","április","május","június","július","augusztus","szeptember","október","november","december"]
+allat={}
+run = True
+while run:
+    a=input("adja meg az állat nevét:")
+    if a !="":
+        b=int(input("adja meg a születési évét az állatnak:"))
+        c=input("adja meg az állat fajtáját:")
+        allat['név']=a
+        allat['év'] = 2022-b
+        allat['fajta'] = c
+    else:
+        run=False
+print("1.állat")
+for key in allat.keys():
+     print(key, "-->", allat[key])
 
+#2feladat
 
-digitoflife=input("Add meg születési dátumod!")
-while len(digitoflife)!=1:
-    digitoflife=sorozat(digitoflife)
-if honap in digitoflife:
-    print("Az élet számod:",digitoflife)
+orszag = {}
+l2 = []
+
+run1 = True
+while run1:
+
+    d = input("adja meg az ország nevét:")
+    if d != "":
+       e = input("Adja meg az ország fővárosát")
+       f = input("Adja meg hogy ez az ország mikor csatlakozott az EU-hoz (év):")
+       orszag['ország neve'] = d
+       orszag['ország fővárosa'] = e
+       orszag['EU-hoz csatlakozás'] = f
+       y = orszag.copy()
+       l2.append(y)
+
+    else:
+          run1=False
+
+print(l2)
