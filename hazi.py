@@ -88,7 +88,7 @@ i=0
 while ev_rendezett[i]["csatlakozas"]==elso:
         i+=1
 print("Az alapítótagok száma:", i)
-print(" A leghosszabb a neve:")
+print(" A legrövidebb a neve:")
 min=orszag[i]["nev"]
 for i in range(len(orszag)):
         if len(orszag[i]["nev"])<len(min):
@@ -97,7 +97,7 @@ print(min)
 while len(ev_rendezett[i]["nev"])==len(min):
         print("-",ev_rendezett[i]["nev"])
 i+=1
-print("Négy betűs a fővárosa:")
+print(" 6 betűnél hosszabb a főváros neve:")
 for i in range(len(orszag)):
-  if len(orszag[i]["fovaros"])==4:
+  if len(orszag[i]["fovaros"])>6:
         print(orszag[i]["nev"], "-", orszag[i]["fovaros"])
